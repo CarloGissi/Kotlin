@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_pc">
+
+    <fragment
+        android:id="@+id/navigation_pc"
+        android:name="com.example.mydevice.ui.pc.PcFragment"
+        android:label="@string/title_pc"
+        tools:layout="@layout/fragment_pc"
+        app:defaultNavHost="true">
+        <argument
+            android:name="dispositivo"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="sistemaOperativo"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="prezzoMin"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="prezzoMax"
+            app:argType="float"
+            android:defaultValue="2000.0" />
+        <argument
+            android:name="utilizzo"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="tipo"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="ram"
+            app:argType="float"
+            android:defaultValue="8" />
+        <argument
+            android:name="numProcessore"
+            app:argType="float"
+            android:defaultValue="4.0" />
+        <argument
+            android:name="dimMemSec"
+            app:argType="float"
+            android:defaultValue="512.0" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tablet"
+        android:name="com.example.mydevice.ui.tablet.TabletFragment"
+        android:label="@string/title_tablet"
+        tools:layout="@layout/fragment_tablet"
+        app:defaultNavHost="true">
+        <argument
+            android:name="dispositivo"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="sistemaOperativo"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="prezzoMin"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="prezzoMax"
+            app:argType="float"
+            android:defaultValue="2000.0" />
+        <argument
+            android:name="ram"
+            app:argType="float"
+            android:defaultValue="4.0" />
+        <argument
+            android:name="dimMemSec"
+            app:argType="float"
+            android:defaultValue="128.0" />
+        <argument
+            android:name="utilizzo"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_cellulari"
+        android:name="com.example.mydevice.ui.cellulari.CellulareFragment"
+        android:label="@string/title_cellulari"
+        tools:layout="@layout/fragment_cellulare"
+        app:defaultNavHost="true">
+        <argument
+            android:name="prezzoMax"
+            app:argType="float"
+            android:defaultValue="2000.0" />
+        <argument
+            android:name="sistemaOperativo"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="prezzoMin"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="dispositivo"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_preferiti"
+        android:name="com.example.mydevice.ui.preferiti.PreferitiFragment"
+        android:label="@string/title_preferiti"
+        tools:layout="@layout/fragment_preferiti"
+        app:defaultNavHost="true"/>
+    <fragment
+        android:id="@+id/navigation_filter"
+        android:name="com.example.mydevice.ui.filter.FilterFragment"
+        android:label="@string/title_filter"
+        tools:layout="@layout/fragment_filter"
+        app:defaultNavHost="true">
+        <action
+            android:id="@+id/action_inputFragment_to_cellFragment"
+            app:destination="@id/navigation_cellulari"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_inputFragment_to_PcFragment"
+            app:destination="@id/navigation_pc" />
+        <action
+            android:id="@+id/action_inputFragment_to_tabletFragment"
+            app:destination="@id/navigation_tablet" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MyDevice</string>
+    <string name="title_pc">Computer</string>
+    <string name="title_filter">Filtri</string>
+    <string name="title_preferiti">Preferiti</string>
+    <string name="title_tablet">Tablet</string>
+    <string name="title_cellulari">Cellulari</string>
+
+    <string name="rangeSlider_desc"> 10</string>
+    <string name="no_results">0 results</string>
+    <string name="filter_button">Filter</string>
+    <string name="tipologia">Tipologia</string>
+    <string name="desktop">desktop</string>
+    <string name="notebook">notebook</string>
+    <string name="utilizzo">Utilizzo</string>
+    <string name="game">Game</string>
+    <string name="Windows">Windows</string>
+    <string name="MacOS">Mac OS</string>
+    <string name="Linux">Linux</string>
+    <string name="studio">Casa/Studio</string>
+    <string name="lavoro">Lavoro</string>
+    <string name="prezzo">Prezzo</string>
+    <string name="length_range">0 € - 2000+ €</string>
+    <string name="length_range_current">%1$d € - %2$d €</string>
+    <string name="length_max">%1$s+</string>
+    <string name="zero_results">0 results</string>
+    <string name="see_the_results">See the results</string>
+</resources>

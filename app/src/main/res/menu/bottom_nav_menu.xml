@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_pc"
+        android:icon="@drawable/ic_baseline_computer_24"
+        android:title="@string/title_pc" />
+
+    <item
+        android:id="@+id/navigation_tablet"
+        android:icon="@drawable/ic_baseline_tablet_mac_24"
+        android:title="@string/title_tablet" />
+
+    <item
+        android:id="@+id/navigation_cellulari"
+        android:icon="@drawable/ic_baseline_phone_android_24"
+        android:title="@string/title_cellulari" />
+
+    <item
+        android:id="@+id/navigation_preferiti"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/title_preferiti" />
+
+    <item
+        android:id="@+id/navigation_filter"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        android:title="@string/title_filter" />
+
+</menu>

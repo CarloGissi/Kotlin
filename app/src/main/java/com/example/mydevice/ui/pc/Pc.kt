@@ -1,0 +1,3 @@
+package com.example.mydevice.ui.pc
+
+data class Pc(var id : String ?= null, var descrizione : String ?= null, var nome : String ?=null, var ram : Int ?= null, var img : String?= null, var colore : String?= null, var marca : String?= null, var dimMemSec : Int?= null, var dimensioneSchermo : Double?= null, var numeroProcessore : Int?= null, var peso : Double?= null, var preferito : Boolean?= null, var prezzo : Double?= null, var processore : String?= null, var schedaGrafica : String?= null, var sistemaOperativo : String?= null, var tipoMemSec: String?= null, var tipo: String ?=null)
